@@ -220,7 +220,7 @@
 }
 },
 "meta": {
-"nextAssetID": 50
+"nextAssetID": 58
 },
 "font": {
 "aid": "dbfab361550843e9"
@@ -229,8 +229,8 @@
 "puzzle": {
 "board": {
 "nextid": 66,
-"x": 620,
-"y": 365,
+"x": 415,
+"y": 284,
 "boxes": [
 {
 "type": 257,
@@ -364,8 +364,8 @@
 "type": 256,
 "id": 54,
 "name": "#used_ruban",
-"x": 169,
-"y": 186,
+"x": 164,
+"y": 179,
 "plugs": [
 {
 "id": 55,
@@ -1648,8 +1648,8 @@
 "graph": {
 "board": {
 "nextid": 19,
-"x": 295,
-"y": 144,
+"x": 933,
+"y": 417,
 "boxes": [
 {
 "type": 1285,
@@ -1776,8 +1776,8 @@
 "graph": {
 "board": {
 "nextid": 190,
-"x": 104,
-"y": 555,
+"x": 274,
+"y": 488,
 "boxes": [
 {
 "type": 775,
@@ -2052,8 +2052,8 @@
 "graph": {
 "board": {
 "nextid": 15,
-"x": 2200,
-"y": 1285,
+"x": 2383,
+"y": 1315,
 "boxes": [
 {
 "type": 1287,
@@ -2157,15 +2157,15 @@
 "uid": "L_COULOIR2",
 "graph": {
 "board": {
-"nextid": 39,
-"x": 105,
-"y": 247,
+"nextid": 48,
+"x": 344,
+"y": -59,
 "boxes": [
 {
 "type": 775,
 "id": 5,
-"x": 571,
-"y": 376,
+"x": 243,
+"y": 285,
 "plugs": [
 {
 "id": 6,
@@ -2182,17 +2182,17 @@
 "type": 256,
 "id": 8,
 "resize": true,
-"width": 374,
-"height": 270,
-"x": 324,
-"y": 320,
+"width": 389,
+"height": 313,
+"x": -4,
+"y": 229,
 "name": "SCENE"
 },
 {
 "type": 1285,
 "id": 9,
-"x": 382,
-"y": 374,
+"x": 54,
+"y": 283,
 "plugs": [
 {
 "id": 10,
@@ -2209,8 +2209,8 @@
 {
 "type": 1285,
 "id": 11,
-"x": 381,
-"y": 459,
+"x": 53,
+"y": 368,
 "plugs": [
 {
 "id": 12,
@@ -2227,8 +2227,8 @@
 {
 "type": 775,
 "id": 13,
-"x": 570,
-"y": 461,
+"x": 242,
+"y": 370,
 "plugs": [
 {
 "id": 14,
@@ -2247,15 +2247,15 @@
 "resize": true,
 "width": 426,
 "height": 127,
-"x": 374,
-"y": 95,
+"x": -26,
+"y": 2,
 "name": "EMPREINTE"
 },
 {
 "type": 1291,
 "id": 17,
-"x": 406,
-"y": 138,
+"x": 6,
+"y": 45,
 "plugs": [
 {
 "id": 18,
@@ -2268,13 +2268,13 @@
 "var_cmp": "==",
 "scene": "S_COULOIR2",
 "item": "I_POUDRE",
-"label": "EMPREINTE"
+"label": "TRACE_EMPREINTE"
 },
 {
 "type": 788,
 "id": 19,
-"x": 545,
-"y": 149,
+"x": 145,
+"y": 56,
 "plugs": [
 {
 "id": 20,
@@ -2295,8 +2295,8 @@
 {
 "type": 788,
 "id": 25,
-"x": 679,
-"y": 146,
+"x": 279,
+"y": 53,
 "plugs": [
 {
 "id": 26,
@@ -2310,6 +2310,41 @@
 "player": "P_HERO",
 "item": "I_EMPREINTE",
 "silent": "False"
+},
+{
+"type": 775,
+"id": 41,
+"x": 207,
+"y": 475,
+"plugs": [
+{
+"id": 42,
+"type": 2
+},
+{
+"id": 43,
+"type": 3
+}
+],
+"scene": "S_ENTREE_CONFINEMENT"
+},
+{
+"type": 1287,
+"id": 46,
+"x": 51,
+"y": 460,
+"plugs": [
+{
+"id": 47,
+"type": 3,
+"trgs": [
+42
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_COULOIR2",
+"instance": "BACK"
 }
 ]
 }
@@ -2320,7 +2355,247 @@
 "uid": "L_INFIRMERIE",
 "graph": {
 "board": {
-"nextid": 3
+"nextid": 9,
+"x": 12,
+"y": 13,
+"boxes": [
+{
+"type": 1285,
+"id": 3,
+"x": 271,
+"y": 287,
+"plugs": [
+{
+"id": 4,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_INFIRMERIE",
+"label": "PORTE_COULOIR"
+},
+{
+"type": 775,
+"id": 5,
+"x": 460,
+"y": 289,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3
+}
+],
+"scene": "S_COULOIR2"
+},
+{
+"type": 256,
+"id": 8,
+"resize": true,
+"width": 385,
+"height": 119,
+"x": 225,
+"y": 249,
+"name": "SCENE"
+}
+]
+}
+}
+},
+{
+"sid": 51,
+"uid": "L_ENTREE_CONFINEMENT",
+"graph": {
+"board": {
+"nextid": 14,
+"x": 1170,
+"y": 607,
+"boxes": [
+{
+"type": 256,
+"id": 3,
+"resize": true,
+"width": 415,
+"height": 233,
+"x": -372,
+"y": -94,
+"name": "SCENE"
+},
+{
+"type": 1287,
+"id": 4,
+"x": -344,
+"y": -50,
+"plugs": [
+{
+"id": 5,
+"type": 3,
+"trgs": [
+7
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_ENTREE_CONFINEMENT",
+"instance": "BACK"
+},
+{
+"type": 775,
+"id": 6,
+"x": -84,
+"y": -44,
+"plugs": [
+{
+"id": 7,
+"type": 2
+},
+{
+"id": 8,
+"type": 3
+}
+],
+"scene": "S_COULOIR2"
+},
+{
+"type": 1285,
+"id": 9,
+"x": -340,
+"y": 38,
+"plugs": [
+{
+"id": 10,
+"type": 3,
+"trgs": [
+12
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_ENTREE_CONFINEMENT",
+"label": "ZONE_DE_CONFINEMENT"
+},
+{
+"type": 775,
+"id": 11,
+"x": -83,
+"y": 51,
+"plugs": [
+{
+"id": 12,
+"type": 2
+},
+{
+"id": 13,
+"type": 3
+}
+],
+"scene": "S_COULOIR3"
+}
+]
+}
+}
+},
+{
+"sid": 53,
+"uid": "L_COULOIR3",
+"graph": {
+"board": {
+"nextid": 11,
+"boxes": [
+{
+"type": 775,
+"id": 5,
+"x": 514,
+"y": 263,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
+"type": 3
+}
+],
+"scene": "S_ENTREE_CONFINEMENT"
+},
+{
+"type": 256,
+"id": 8,
+"resize": true,
+"width": 412,
+"height": 157,
+"x": 296,
+"y": 189,
+"name": "SCENE"
+},
+{
+"type": 1285,
+"id": 9,
+"x": 333,
+"y": 253,
+"plugs": [
+{
+"id": 10,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_COULOIR3",
+"label": "ZONE_DE_PRISON"
+}
+]
+}
+}
+},
+{
+"sid": 55,
+"uid": "L_ANOMALIE035",
+"graph": {
+"board": {
+"nextid": 3,
+"boxes": [
+{
+"type": 257,
+"id": 1,
+"plugs": [
+{
+"id": 2,
+"type": 3
+}
+]
+}
+]
+}
+}
+},
+{
+"sid": 57,
+"uid": "L_ANOMALIE079",
+"graph": {
+"board": {
+"nextid": 3,
+"boxes": [
+{
+"type": 257,
+"id": 1,
+"plugs": [
+{
+"id": 2,
+"type": 3
+}
+]
+}
+]
 }
 }
 }
@@ -4731,7 +5006,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 29,
 "nextID": 8,
 "effect": "E_INSIDE"
 },
@@ -5846,7 +6121,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 29,
 "nextID": 6,
 "x": -432,
 "y": -61
@@ -7839,7 +8114,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 29,
 "nextID": 3
 },
 "layers": {
@@ -11680,7 +11955,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 29,
 "x": -383,
 "y": -85,
 "nextID": 8
@@ -11891,7 +12166,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 29,
 "nextID": 5,
 "x": -240,
 "y": -51
@@ -12097,7 +12372,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 29,
 "nextID": 5,
 "x": -233,
 "y": -25
@@ -12311,7 +12586,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 29,
 "nextID": 6,
 "x": -304,
 "y": -59
@@ -12542,8 +12817,8 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
-"nextID": 5,
+"zoom": 29,
+"nextID": 6,
 "x": -318,
 "y": -62
 },
@@ -12675,6 +12950,59 @@
 {},
 {}
 ]
+},
+{
+"name": "BACK",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1024,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_BACK",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 106,
+"y": 925,
+"parallax": 100,
+"title": {
+"en": "Left"
+},
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
 }
 ],
 "labels": [
@@ -12710,7 +13038,7 @@
 }
 },
 {
-"name": "EMPREINTE",
+"name": "TRACE_EMPREINTE",
 "id": 4,
 "tags": [
 "",
@@ -12731,10 +13059,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 40,
+"zoom": 29,
 "x": -299,
 "y": -68,
-"nextID": 2
+"nextID": 3
 },
 "layers": {
 "BACK": {
@@ -12742,10 +13070,22 @@
 "opacity_max": 100,
 "opacity_speed": 100,
 "image": {
-"aid": "d14cdc8f9d23ab44"
+"aid": "a9434d20b1156e49"
 },
 "texture": {
-"aid": "e4ac06d18409b9e4"
+"width": 1536,
+"height": 1024,
+"rects": [
+{
+"w": 1536,
+"h": 1024
+}
+],
+"textures": [
+{
+"aid": "8765bc7ed84e7079"
+}
+]
 }
 },
 "MA": {
@@ -12853,7 +13193,676 @@
 {}
 ]
 }
+],
+"labels": [
+{
+"name": "PORTE_COULOIR",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 888,
+"y": 374,
+"width": 191,
+"height": 314,
+"title": {
+"en": "Porte Couloir"
+}
+}
 ]
+},
+{
+"sid": 50,
+"uid": "S_ENTREE_CONFINEMENT",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 29,
+"nextID": 7
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "0014114e1ac65067"
+},
+"texture": {
+"width": 1536,
+"height": 1024,
+"rects": [
+{
+"w": 1536,
+"h": 1024
+}
+],
+"textures": [
+{
+"aid": "1b251d6f7552eb1a"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "NEW",
+"uid": "O_NEW",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1682,
+"y": 912,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "BACK",
+"depths": [
+{
+"a": 100,
+"b": 100
+},
+{
+"y": 1024,
+"a": 100,
+"b": 100
+}
+],
+"uid": "O_BACK",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1454,
+"y": 945,
+"parallax": 100,
+"opacity": 100,
+"angle": 180,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+],
+"labels": [
+{
+"name": "EMPREINTE",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1317,
+"y": 638,
+"width": 120,
+"height": 125
+},
+{
+"name": "CODE",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1183,
+"y": 619,
+"width": 120,
+"height": 125
+},
+{
+"name": "KEYCARD",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1081,
+"y": 588,
+"width": 93,
+"height": 125
+},
+{
+"name": "ZONE_DE_CONFINEMENT",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 231,
+"y": 229,
+"width": 625,
+"height": 676,
+"title": {
+"en": "Porte Zone de Confinement"
+}
+}
+]
+},
+{
+"sid": 52,
+"uid": "S_COULOIR3",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 54,
+"nextID": 8
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "eff5dbc826c38cf3"
+},
+"texture": {
+"width": 1536,
+"height": 1024,
+"rects": [
+{
+"w": 1536,
+"h": 1024
+}
+],
+"textures": [
+{
+"aid": "89ab19cf197468d1"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "NEW",
+"uid": "O_NEW",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1695,
+"y": 909,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+],
+"labels": [
+{
+"name": "ZONE_DE_PRISON",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 143,
+"y": 74,
+"width": 318,
+"height": 913,
+"title": {
+"en": "Porte de Zone de Prison"
+}
+},
+{
+"name": "ANOMALIE035",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1192,
+"y": 222,
+"width": 211,
+"height": 686,
+"title": {
+"en": "Confinement de 035"
+}
+},
+{
+"name": "ANOMALIE079",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 979,
+"y": 339,
+"width": 125,
+"height": 406,
+"title": {
+"en": "Confinement de 079"
+}
+},
+{
+"name": "COULOIR",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 703,
+"y": 415,
+"width": 161,
+"height": 229
+},
+{
+"name": "ANOMALIE096",
+"id": 7,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 890,
+"y": 406,
+"width": 76,
+"height": 250,
+"title": {
+"en": "Confinement de 096"
+}
+}
+]
+},
+{
+"sid": 54,
+"uid": "S_ANOMALIE035",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 29,
+"nextID": 1
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "44c7ca4e39adfbc6"
+},
+"texture": {
+"aid": "e0317b92a6c02933"
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+}
+},
+{
+"sid": 56,
+"uid": "S_ANOMALIE079",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 29,
+"nextID": 1
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "96765d5d897e568d"
+},
+"texture": {
+"aid": "9dfd8de75f29c30a"
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+}
 }
 ],
 "objects": [
