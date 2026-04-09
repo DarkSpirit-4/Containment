@@ -220,7 +220,7 @@
 }
 },
 "meta": {
-"nextAssetID": 43
+"nextAssetID": 57
 },
 "font": {
 "aid": "dbfab361550843e9"
@@ -228,9 +228,9 @@
 },
 "puzzle": {
 "board": {
-"nextid": 54,
-"x": 763,
-"y": 435,
+"nextid": 90,
+"x": 1330,
+"y": 630,
 "boxes": [
 {
 "type": 257,
@@ -243,7 +243,9 @@
 "id": 2,
 "type": 3,
 "trgs": [
-6
+55,
+79,
+85
 ]
 }
 ]
@@ -252,8 +254,8 @@
 "type": 260,
 "id": 3,
 "name": "end",
-"x": 742,
-"y": -10,
+"x": 716,
+"y": 48,
 "plugs": [
 {
 "id": 4,
@@ -265,8 +267,8 @@
 "type": 256,
 "id": 5,
 "name": "#take_key",
-"x": 57,
-"y": -6,
+"x": 303,
+"y": 85,
 "plugs": [
 {
 "id": 6,
@@ -285,8 +287,8 @@
 "type": 256,
 "id": 8,
 "name": "#fuel_used",
-"x": 423,
-"y": -19,
+"x": 534,
+"y": -165,
 "plugs": [
 {
 "id": 9,
@@ -304,9 +306,9 @@
 {
 "type": 256,
 "id": 12,
-"name": "#open_door",
-"x": 243,
-"y": -18,
+"name": "#open_kitchen",
+"x": 426,
+"y": 86,
 "plugs": [
 {
 "id": 13,
@@ -316,8 +318,7 @@
 "id": 14,
 "type": 3,
 "trgs": [
-9,
-40
+67
 ]
 }
 ]
@@ -326,8 +327,8 @@
 "type": 256,
 "id": 36,
 "name": "#box",
-"x": 601,
-"y": -15,
+"x": 699,
+"y": -151,
 "plugs": [
 {
 "id": 37,
@@ -335,10 +336,7 @@
 },
 {
 "id": 38,
-"type": 3,
-"trgs": [
-4
-]
+"type": 3
 }
 ]
 },
@@ -346,8 +344,8 @@
 "type": 256,
 "id": 39,
 "name": "#rouage_used",
-"x": 427,
-"y": 39,
+"x": 567,
+"y": -309,
 "plugs": [
 {
 "id": 40,
@@ -358,6 +356,146 @@
 "type": 3,
 "trgs": [
 37
+]
+}
+]
+},
+{
+"type": 256,
+"id": 54,
+"name": "#take_cutter",
+"x": 61,
+"y": 84,
+"plugs": [
+{
+"id": 55,
+"type": 2
+},
+{
+"id": 56,
+"type": 3,
+"trgs": [
+64
+]
+}
+]
+},
+{
+"type": 256,
+"id": 63,
+"name": "#Cut_pipe",
+"x": 196,
+"y": 85,
+"plugs": [
+{
+"id": 64,
+"type": 2
+},
+{
+"id": 65,
+"type": 3,
+"trgs": [
+6
+]
+}
+]
+},
+{
+"type": 256,
+"id": 66,
+"name": "#take_floar",
+"x": 566,
+"y": 92,
+"plugs": [
+{
+"id": 67,
+"type": 2
+},
+{
+"id": 68,
+"type": 3,
+"trgs": [
+4
+]
+}
+]
+},
+{
+"type": 256,
+"id": 78,
+"name": "#food_used",
+"x": 77,
+"y": -106,
+"plugs": [
+{
+"id": 79,
+"type": 2
+},
+{
+"id": 80,
+"type": 3,
+"trgs": [
+82
+]
+}
+]
+},
+{
+"type": 256,
+"id": 81,
+"name": "#lax_taco",
+"x": 235,
+"y": -57,
+"plugs": [
+{
+"id": 82,
+"type": 2
+},
+{
+"id": 83,
+"type": 3,
+"trgs": [
+88
+]
+}
+]
+},
+{
+"type": 256,
+"id": 84,
+"name": "#pill_used",
+"x": 83,
+"y": 2,
+"plugs": [
+{
+"id": 85,
+"type": 2
+},
+{
+"id": 86,
+"type": 3,
+"trgs": [
+82
+]
+}
+]
+},
+{
+"type": 256,
+"id": 87,
+"name": "#box2",
+"x": 374,
+"y": -22,
+"plugs": [
+{
+"id": 88,
+"type": 2
+},
+{
+"id": 89,
+"type": 3,
+"trgs": [
+4
 ]
 }
 ]
@@ -372,8 +510,8 @@
 "graph": {
 "board": {
 "nextid": 290,
-"x": -776,
-"y": 116,
+"x": -436,
+"y": 203,
 "boxes": [
 {
 "type": 1285,
@@ -482,7 +620,7 @@
 ]
 }
 ],
-"resolved": "#open_door",
+"resolved": "#open_kitchen",
 "var_cmp": "==",
 "scene": "S_OUTSIDE",
 "label": "DOOR"
@@ -568,7 +706,7 @@
 "type": 3
 }
 ],
-"puzzle": "#open_door"
+"puzzle": "#open_kitchen"
 },
 {
 "type": 788,
@@ -606,7 +744,7 @@
 ]
 }
 ],
-"unresolved": "#open_door",
+"unresolved": "#open_kitchen",
 "var_cmp": "==",
 "scene": "S_OUTSIDE",
 "label": "DOOR"
@@ -784,7 +922,7 @@
 },
 "graph": {
 "board": {
-"nextid": 12,
+"nextid": 20,
 "x": 285,
 "y": 509,
 "boxes": [
@@ -876,7 +1014,7 @@
 {
 "type": 1287,
 "id": 15,
-"x": 453,
+"x": 454,
 "y": 197,
 "plugs": [
 {
@@ -1129,7 +1267,7 @@
 },
 "graph": {
 "board": {
-"nextid": 48,
+"nextid": 52,
 "x": -34,
 "y": 67,
 "boxes": [
@@ -1141,10 +1279,7 @@
 "plugs": [
 {
 "id": 4,
-"type": 3,
-"trgs": [
-6
-]
+"type": 3
 }
 ],
 "order": 1,
@@ -1242,8 +1377,8 @@
 "type": 256,
 "id": 28,
 "resize": true,
-"width": 398,
-"height": 520,
+"width": 493,
+"height": 566,
 "x": 354,
 "y": 94,
 "name": "CATCH-ALL"
@@ -1251,8 +1386,8 @@
 {
 "type": 781,
 "id": 40,
-"x": 590,
-"y": 356,
+"x": 586,
+"y": 352,
 "plugs": [
 {
 "id": 41,
@@ -1463,9 +1598,9 @@
 "uid": "L_CELL",
 "graph": {
 "board": {
-"nextid": 15,
-"x": -119,
-"y": 272,
+"nextid": 75,
+"x": -34,
+"y": 246,
 "boxes": [
 {
 "type": 1287,
@@ -1509,8 +1644,8 @@
 "type": 256,
 "id": 8,
 "resize": true,
-"width": 385,
-"height": 119,
+"width": 492,
+"height": 348,
 "x": 792,
 "y": 275,
 "name": "SCENE"
@@ -1559,6 +1694,218 @@
 "x": 786,
 "y": 112,
 "name": "RUBAN"
+},
+{
+"type": 256,
+"id": 15,
+"resize": true,
+"width": 423,
+"height": 107,
+"x": 300,
+"y": 118,
+"name": "BUCKET"
+},
+{
+"type": 1287,
+"id": 22,
+"x": 346,
+"y": 157,
+"plugs": [
+{
+"id": 23,
+"type": 3,
+"trgs": [
+25
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CELL",
+"instance": "BUCKET"
+},
+{
+"type": 788,
+"id": 24,
+"x": 524,
+"y": 153,
+"plugs": [
+{
+"id": 25,
+"type": 2
+},
+{
+"id": 26,
+"type": 3
+}
+],
+"player": "P_HERO",
+"item": "I_BUCKET",
+"instance": "BUCKET",
+"silent": "False"
+},
+{
+"type": 1291,
+"id": 27,
+"x": 853,
+"y": 414,
+"plugs": [
+{
+"id": 28,
+"type": 3,
+"trgs": [
+73
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CELL",
+"item": "I_BUCKET",
+"label": "LAVABO"
+},
+{
+"type": 1291,
+"id": 49,
+"x": 839,
+"y": 527,
+"plugs": [
+{
+"id": 50,
+"type": 3,
+"trgs": [
+52
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CELL",
+"item": "I_WATER_BUCKET",
+"label": "TOILETTE"
+},
+{
+"type": 788,
+"id": 51,
+"x": 975,
+"y": 528,
+"plugs": [
+{
+"id": 52,
+"type": 2
+},
+{
+"id": 53,
+"type": 3,
+"trgs": [
+55
+]
+}
+],
+"player": "DUMP",
+"item": "I_WATER_BUCKET",
+"silent": "False"
+},
+{
+"type": 786,
+"id": 54,
+"x": 1109,
+"y": 528,
+"plugs": [
+{
+"id": 55,
+"type": 2
+},
+{
+"id": 56,
+"type": 3
+}
+],
+"visible": "True",
+"instance": "CUTTER"
+},
+{
+"type": 256,
+"id": 60,
+"resize": true,
+"width": 447,
+"height": 172,
+"x": 306,
+"y": 298,
+"name": "CUTTER"
+},
+{
+"type": 1287,
+"id": 61,
+"x": 335,
+"y": 358,
+"plugs": [
+{
+"id": 62,
+"type": 3,
+"trgs": [
+64
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CELL",
+"instance": "CUTTER"
+},
+{
+"type": 788,
+"id": 63,
+"x": 478,
+"y": 348,
+"plugs": [
+{
+"id": 64,
+"type": 2
+},
+{
+"id": 65,
+"type": 3,
+"trgs": [
+67
+]
+}
+],
+"player": "P_HERO",
+"item": "I_CUTTER",
+"instance": "CUTTER",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 66,
+"x": 644,
+"y": 350,
+"plugs": [
+{
+"id": 67,
+"type": 2
+},
+{
+"id": 68,
+"type": 3
+}
+],
+"puzzle": "#take_cutter"
+},
+{
+"type": 781,
+"id": 72,
+"x": 1000,
+"y": 410,
+"plugs": [
+{
+"id": 73,
+"type": 2
+},
+{
+"id": 74,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "4"
 }
 ]
 }
@@ -1569,9 +1916,9 @@
 "uid": "L_COULOIR",
 "graph": {
 "board": {
-"nextid": 19,
-"x": 182,
-"y": 77,
+"nextid": 28,
+"x": 158,
+"y": -54,
 "boxes": [
 {
 "type": 1285,
@@ -1634,7 +1981,7 @@
 ],
 "var_cmp": "==",
 "scene": "S_COULOIR",
-"label": "CAFET"
+"label": "CAFE"
 },
 {
 "type": 775,
@@ -1697,9 +2044,575 @@
 "uid": "L_CAFETERIA",
 "graph": {
 "board": {
-"nextid": 3,
-"x": 377,
-"y": 335
+"nextid": 198,
+"x": 464,
+"y": 250,
+"boxes": [
+{
+"type": 256,
+"id": 3,
+"resize": true,
+"width": 487,
+"height": 285,
+"x": -104,
+"y": -66,
+"name": "KEY"
+},
+{
+"type": 788,
+"id": 14,
+"x": 151,
+"y": 1,
+"plugs": [
+{
+"id": 15,
+"type": 2
+},
+{
+"id": 16,
+"type": 3,
+"trgs": [
+21
+]
+}
+],
+"player": "DUMP",
+"item": "I_KEY",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 20,
+"x": 254,
+"y": 1,
+"plugs": [
+{
+"id": 21,
+"type": 2
+},
+{
+"id": 22,
+"type": 3
+}
+],
+"puzzle": "#open_kitchen"
+},
+{
+"type": 1285,
+"id": 23,
+"x": 1,
+"y": 329,
+"plugs": [
+{
+"id": 24,
+"type": 3,
+"trgs": [
+26
+]
+}
+],
+"resolved": "#open_kitchen",
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"label": "CUISINE"
+},
+{
+"type": 775,
+"id": 25,
+"x": 177,
+"y": 364,
+"plugs": [
+{
+"id": 26,
+"type": 2
+},
+{
+"id": 27,
+"type": 3
+}
+],
+"scene": "S_CUISINE"
+},
+{
+"type": 256,
+"id": 28,
+"resize": true,
+"width": 560,
+"height": 339,
+"x": -97,
+"y": 267,
+"name": "SCENE"
+},
+{
+"type": 781,
+"id": 31,
+"x": 128,
+"y": 91,
+"plugs": [
+{
+"id": 32,
+"type": 2
+},
+{
+"id": 33,
+"type": 3
+}
+],
+"dialog": "D_HERO",
+"sentence": "3"
+},
+{
+"type": 1291,
+"id": 44,
+"x": -61,
+"y": -13,
+"plugs": [
+{
+"id": 45,
+"type": 3,
+"trgs": [
+15
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"item": "I_KEY",
+"label": "CUISINE"
+},
+{
+"type": 256,
+"id": 46,
+"resize": true,
+"width": 563,
+"height": 395,
+"x": 477,
+"y": -67,
+"name": "MARMITE"
+},
+{
+"type": 1291,
+"id": 47,
+"x": 528,
+"y": -25,
+"plugs": [
+{
+"id": 48,
+"type": 3,
+"trgs": [
+52
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"item": "I_FOOD",
+"label": "MARMITE"
+},
+{
+"type": 1291,
+"id": 49,
+"x": 535,
+"y": 218,
+"plugs": [
+{
+"id": 50,
+"type": 3,
+"trgs": [
+55
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"item": "I_PILL",
+"label": "MARMITE"
+},
+{
+"type": 788,
+"id": 51,
+"x": 658,
+"y": -14,
+"plugs": [
+{
+"id": 52,
+"type": 2
+},
+{
+"id": 53,
+"type": 3,
+"trgs": [
+58
+]
+}
+],
+"player": "DUMP",
+"item": "I_FOOD",
+"silent": "False"
+},
+{
+"type": 788,
+"id": 54,
+"x": 651,
+"y": 236,
+"plugs": [
+{
+"id": 55,
+"type": 2
+},
+{
+"id": 56,
+"type": 3,
+"trgs": [
+65
+]
+}
+],
+"player": "DUMP",
+"item": "I_PILL",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 57,
+"x": 768,
+"y": -16,
+"plugs": [
+{
+"id": 58,
+"type": 2
+},
+{
+"id": 59,
+"type": 3
+}
+],
+"puzzle": "#food_used"
+},
+{
+"type": 1303,
+"id": 60,
+"x": 549,
+"y": 104,
+"plugs": [
+{
+"id": 61,
+"type": 3,
+"trgs": [
+68
+]
+}
+],
+"var_cmp": "==",
+"puzzle": "#lax_taco",
+"mode": "ENTER"
+},
+{
+"type": 780,
+"id": 64,
+"x": 750,
+"y": 246,
+"plugs": [
+{
+"id": 65,
+"type": 2
+},
+{
+"id": 66,
+"type": 3
+}
+],
+"puzzle": "#pill_used"
+},
+{
+"type": 788,
+"id": 67,
+"x": 661,
+"y": 106,
+"plugs": [
+{
+"id": 68,
+"type": 2
+},
+{
+"id": 69,
+"type": 3,
+"trgs": [
+71
+]
+}
+],
+"player": "P_HERO",
+"item": "I_LAX_TACO",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 70,
+"x": 787,
+"y": 118,
+"plugs": [
+{
+"id": 71,
+"type": 2
+},
+{
+"id": 72,
+"type": 3
+}
+],
+"puzzle": "#lax_taco"
+},
+{
+"type": 1287,
+"id": 73,
+"x": -3,
+"y": 490,
+"plugs": [
+{
+"id": 74,
+"type": 3,
+"trgs": [
+76
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"instance": "BACK"
+},
+{
+"type": 775,
+"id": 75,
+"x": 172,
+"y": 494,
+"plugs": [
+{
+"id": 76,
+"type": 2
+},
+{
+"id": 77,
+"type": 3
+}
+],
+"scene": "S_COULOIR"
+},
+{
+"type": 256,
+"id": 78,
+"resize": true,
+"width": 614,
+"height": 265,
+"x": 484,
+"y": 366,
+"name": "GUARD"
+},
+{
+"type": 788,
+"id": 83,
+"x": 654,
+"y": 412,
+"plugs": [
+{
+"id": 84,
+"type": 2
+},
+{
+"id": 85,
+"type": 3,
+"trgs": [
+87
+]
+}
+],
+"player": "DUMP",
+"item": "I_LAX_TACO",
+"silent": "False"
+},
+{
+"type": 781,
+"id": 86,
+"x": 773,
+"y": 412,
+"plugs": [
+{
+"id": 87,
+"type": 2
+},
+{
+"id": 88,
+"type": 3,
+"trgs": [
+90
+]
+}
+],
+"dialog": "D_GUARD",
+"sentence": "15"
+},
+{
+"type": 786,
+"id": 89,
+"x": 924,
+"y": 443,
+"plugs": [
+{
+"id": 90,
+"type": 2
+},
+{
+"id": 91,
+"type": 3,
+"trgs": [
+93
+]
+}
+],
+"visible": "False",
+"instance": "GUARD"
+},
+{
+"type": 786,
+"id": 92,
+"x": 1019,
+"y": 406,
+"plugs": [
+{
+"id": 93,
+"type": 2
+},
+{
+"id": 94,
+"type": 3
+}
+],
+"visible": "True",
+"instance": "CARD"
+},
+{
+"type": 256,
+"id": 95,
+"resize": true,
+"width": 346,
+"height": 91,
+"x": -94,
+"y": 668,
+"name": "CARTE"
+},
+{
+"type": 1287,
+"id": 101,
+"x": -28,
+"y": 696,
+"plugs": [
+{
+"id": 102,
+"type": 3,
+"trgs": [
+107
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"instance": "CARD"
+},
+{
+"type": 788,
+"id": 106,
+"x": 125,
+"y": 696,
+"plugs": [
+{
+"id": 107,
+"type": 2
+},
+{
+"id": 108,
+"type": 3
+}
+],
+"player": "P_HERO",
+"item": "I_CARD",
+"instance": "CARD",
+"silent": "False"
+},
+{
+"type": 1287,
+"id": 113,
+"x": 500,
+"y": 510,
+"plugs": [
+{
+"id": 114,
+"type": 3,
+"trgs": [
+116
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"instance": "GUARD"
+},
+{
+"type": 781,
+"id": 115,
+"x": 690,
+"y": 511,
+"plugs": [
+{
+"id": 116,
+"type": 2
+},
+{
+"id": 117,
+"type": 3
+}
+],
+"dialog": "D_GUARD",
+"sentence": "13"
+},
+{
+"type": 1285,
+"id": 127,
+"x": -68,
+"y": 99,
+"plugs": [
+{
+"id": 128,
+"type": 3,
+"trgs": [
+32
+]
+}
+],
+"unresolved": "#open_kitchen",
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"label": "CUISINE"
+},
+{
+"type": 1291,
+"id": 196,
+"x": 511,
+"y": 403,
+"plugs": [
+{
+"id": 197,
+"type": 3,
+"trgs": [
+84
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CAFETERIA",
+"item": "I_LAX_TACO",
+"label": "GARDE"
+}
+]
 }
 }
 },
@@ -1708,17 +2621,92 @@
 "uid": "L_CUISINE",
 "graph": {
 "board": {
-"nextid": 3,
+"nextid": 14,
+"x": -9,
+"y": 17,
 "boxes": [
 {
-"type": 257,
-"id": 1,
+"type": 1287,
+"id": 3,
+"x": 773,
+"y": 591,
 "plugs": [
 {
-"id": 2,
+"id": 4,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_CUISINE",
+"instance": "FOOD"
+},
+{
+"type": 788,
+"id": 5,
+"x": 900,
+"y": 590,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
 "type": 3
 }
+],
+"player": "P_HERO",
+"item": "I_FOOD",
+"instance": "FOOD",
+"silent": "False"
+},
+{
+"type": 256,
+"id": 8,
+"resize": true,
+"width": 427,
+"height": 177,
+"x": 725,
+"y": 491,
+"name": "SCENE"
+},
+{
+"type": 1287,
+"id": 9,
+"x": 790,
+"y": 513,
+"plugs": [
+{
+"id": 10,
+"type": 3,
+"trgs": [
+12
 ]
+}
+],
+"var_cmp": "==",
+"scene": "S_CUISINE",
+"instance": "BACK"
+},
+{
+"type": 775,
+"id": 11,
+"x": 965,
+"y": 517,
+"plugs": [
+{
+"id": 12,
+"type": 2
+},
+{
+"id": 13,
+"type": 3
+}
+],
+"scene": "S_CAFETERIA"
 }
 ]
 }
@@ -1729,9 +2717,290 @@
 "uid": "L_COULOIR2",
 "graph": {
 "board": {
-"nextid": 3,
-"x": 93,
-"y": 37
+"nextid": 120,
+"x": 177,
+"y": 71,
+"boxes": [
+{
+"type": 256,
+"id": 3,
+"resize": true,
+"width": 644,
+"height": 517,
+"x": 198,
+"y": 182,
+"name": "SCENE"
+},
+{
+"type": 786,
+"id": 20,
+"x": 542,
+"y": 219,
+"plugs": [
+{
+"id": 21,
+"type": 2
+},
+{
+"id": 22,
+"type": 3,
+"trgs": [
+24
+]
+}
+],
+"visible": "True",
+"instance": "KEY"
+},
+{
+"type": 780,
+"id": 23,
+"x": 685,
+"y": 218,
+"plugs": [
+{
+"id": 24,
+"type": 2
+},
+{
+"id": 25,
+"type": 3
+}
+],
+"puzzle": "#Cut_pipe"
+},
+{
+"type": 788,
+"id": 86,
+"x": 408,
+"y": 219,
+"plugs": [
+{
+"id": 87,
+"type": 2
+},
+{
+"id": 88,
+"type": 3,
+"trgs": [
+21
+]
+}
+],
+"player": "DUMP",
+"item": "I_CUTTER",
+"silent": "False"
+},
+{
+"type": 1291,
+"id": 89,
+"x": 272,
+"y": 218,
+"plugs": [
+{
+"id": 90,
+"type": 3,
+"trgs": [
+87
+]
+}
+],
+"resolved": "#take_cutter",
+"var_cmp": "==",
+"scene": "S_COULOIR2",
+"item": "I_CUTTER",
+"label": "TUYAU"
+},
+{
+"type": 1287,
+"id": 91,
+"x": 267,
+"y": 357,
+"plugs": [
+{
+"id": 92,
+"type": 3,
+"trgs": [
+94
+]
+}
+],
+"resolved": "#Cut_pipe",
+"var_cmp": "==",
+"scene": "S_COULOIR2",
+"instance": "KEY"
+},
+{
+"type": 788,
+"id": 93,
+"x": 434,
+"y": 364,
+"plugs": [
+{
+"id": 94,
+"type": 2
+},
+{
+"id": 95,
+"type": 3,
+"trgs": [
+97
+]
+}
+],
+"player": "P_HERO",
+"item": "I_KEY",
+"instance": "KEY",
+"silent": "False"
+},
+{
+"type": 780,
+"id": 96,
+"x": 612,
+"y": 362,
+"plugs": [
+{
+"id": 97,
+"type": 2
+},
+{
+"id": 98,
+"type": 3
+}
+],
+"puzzle": "#take_key"
+},
+{
+"type": 1287,
+"id": 99,
+"x": 270,
+"y": 464,
+"plugs": [
+{
+"id": 100,
+"type": 3,
+"trgs": [
+102
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_COULOIR2",
+"instance": "BACK"
+},
+{
+"type": 775,
+"id": 101,
+"x": 446,
+"y": 468,
+"plugs": [
+{
+"id": 102,
+"type": 2
+},
+{
+"id": 103,
+"type": 3
+}
+],
+"scene": "S_COULOIR"
+},
+{
+"type": 1285,
+"id": 104,
+"x": 562,
+"y": 447,
+"plugs": [
+{
+"id": 105,
+"type": 3,
+"trgs": [
+107
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_COULOIR2",
+"label": "INFIRMERIE"
+},
+{
+"type": 775,
+"id": 106,
+"x": 693,
+"y": 447,
+"plugs": [
+{
+"id": 107,
+"type": 2
+},
+{
+"id": 108,
+"type": 3
+}
+],
+"scene": "S_INFIRMERIE"
+},
+{
+"type": 788,
+"id": 112,
+"x": 430,
+"y": 590,
+"plugs": [
+{
+"id": 113,
+"type": 2
+},
+{
+"id": 114,
+"type": 3,
+"trgs": [
+116
+]
+}
+],
+"player": "DUMP",
+"item": "I_BUCKET",
+"silent": "False"
+},
+{
+"type": 788,
+"id": 115,
+"x": 532,
+"y": 591,
+"plugs": [
+{
+"id": 116,
+"type": 2
+},
+{
+"id": 117,
+"type": 3
+}
+],
+"player": "P_HERO",
+"item": "I_WATER_BUCKET",
+"silent": "False"
+},
+{
+"type": 1291,
+"id": 118,
+"x": 276,
+"y": 580,
+"plugs": [
+{
+"id": 119,
+"type": 3,
+"trgs": [
+113
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_COULOIR2",
+"item": "I_BUCKET",
+"label": "LAVABO"
+}
+]
 }
 }
 },
@@ -1740,17 +3009,90 @@
 "uid": "L_INFIRMERIE",
 "graph": {
 "board": {
-"nextid": 3,
+"nextid": 14,
 "boxes": [
 {
-"type": 257,
-"id": 1,
+"type": 1287,
+"id": 3,
+"x": 797,
+"y": 573,
 "plugs": [
 {
-"id": 2,
+"id": 4,
+"type": 3,
+"trgs": [
+6
+]
+}
+],
+"var_cmp": "==",
+"scene": "S_INFIRMERIE",
+"instance": "PILL"
+},
+{
+"type": 788,
+"id": 5,
+"x": 967,
+"y": 568,
+"plugs": [
+{
+"id": 6,
+"type": 2
+},
+{
+"id": 7,
 "type": 3
 }
+],
+"player": "P_HERO",
+"item": "I_PILL",
+"instance": "PILL",
+"silent": "False"
+},
+{
+"type": 256,
+"id": 8,
+"resize": true,
+"width": 413,
+"height": 245,
+"x": 775,
+"y": 543,
+"name": "SCENE"
+},
+{
+"type": 1287,
+"id": 9,
+"x": 801,
+"y": 675,
+"plugs": [
+{
+"id": 10,
+"type": 3,
+"trgs": [
+12
 ]
+}
+],
+"var_cmp": "==",
+"scene": "S_INFIRMERIE",
+"instance": "BACK"
+},
+{
+"type": 775,
+"id": 11,
+"x": 977,
+"y": 679,
+"plugs": [
+{
+"id": 12,
+"type": 2
+},
+{
+"id": 13,
+"type": 3
+}
+],
+"scene": "S_COULOIR2"
 }
 ]
 }
@@ -4163,7 +5505,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 85,
 "nextID": 8,
 "effect": "E_INSIDE"
 },
@@ -5278,7 +6620,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 85,
 "nextID": 6,
 "x": -432,
 "y": -61
@@ -7271,7 +8613,7 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 85,
 "nextID": 3
 },
 "layers": {
@@ -11112,10 +12454,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 85,
 "x": -243,
 "y": -48,
-"nextID": 3
+"nextID": 7
 },
 "layers": {
 "BACK": {
@@ -11245,6 +12587,109 @@
 {},
 {}
 ]
+},
+{
+"name": "CUTTER",
+"depths": [
+{
+"a": 35,
+"b": 100
+},
+{
+"y": 1024,
+"a": 35,
+"b": 100
+}
+],
+"uid": "O_CUTTER",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"hidden": true,
+"x": 1258,
+"y": 964,
+"parallax": 100,
+"opacity": 100,
+"angle": 220,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "BUCKET",
+"depths": [
+{
+"a": 15,
+"b": 100
+},
+{
+"y": 1024,
+"a": 15,
+"b": 100
+}
+],
+"uid": "O_BUCKET",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 682,
+"y": 804,
+"parallax": 100,
+"opacity": 100,
+"angle": 356,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
 }
 ],
 "labels": [
@@ -11264,6 +12709,40 @@
 "title": {
 "en": "Porte Cellule"
 }
+},
+{
+"name": "LAVABO",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1262,
+"y": 654,
+"width": 254,
+"height": 118,
+"title": {
+"en": "Lavabo"
+}
+},
+{
+"name": "TOILETTE",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1168,
+"y": 770,
+"width": 276,
+"height": 192,
+"title": {
+"en": "Toilette"
+}
 }
 ]
 },
@@ -11273,8 +12752,8 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
-"nextID": 5,
+"zoom": 85,
+"nextID": 6,
 "x": -240,
 "y": -51
 },
@@ -11427,7 +12906,7 @@
 }
 },
 {
-"name": "CAFET",
+"name": "CAFE",
 "id": 3,
 "tags": [
 "",
@@ -11438,7 +12917,10 @@
 "x": 1006,
 "y": 425,
 "width": 89,
-"height": 30
+"height": 30,
+"title": {
+"en": "Cafeteria"
+}
 },
 {
 "name": "COULOIR2",
@@ -11452,7 +12934,10 @@
 "x": 908,
 "y": 425,
 "width": 89,
-"height": 30
+"height": 30,
+"title": {
+"en": "Infirmerie"
+}
 }
 ]
 },
@@ -11462,8 +12947,8 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
-"nextID": 2
+"zoom": 85,
+"nextID": 9
 },
 "layers": {
 "BACK": {
@@ -11485,6 +12970,371 @@
 "textures": [
 {
 "aid": "96e9570874a2179c"
+}
+]
+}
+},
+"MA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"MD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FA": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FB": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FC": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+},
+"FD": {
+"speed_x": 100,
+"speed_y": 100,
+"parallax": 100,
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100
+}
+},
+"instances": [
+{
+"name": "NEW",
+"uid": "O_NEW",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1596,
+"y": 850,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "BACK",
+"uid": "O_BACK",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 82,
+"y": 950,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "CARD",
+"depths": [
+{
+"a": 5,
+"b": 100
+},
+{
+"y": 1024,
+"a": 5,
+"b": 100
+}
+],
+"uid": "O_CARD",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"hidden": true,
+"x": 549,
+"y": 697,
+"parallax": 100,
+"opacity": 100,
+"angle": 315,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "GUARD",
+"depths": [
+{
+"a": 40,
+"b": 100
+},
+{
+"y": 1024,
+"a": 40,
+"b": 100
+},
+{
+"a": 40,
+"b": 100
+},
+{
+"y": 1024,
+"a": 40,
+"b": 100
+},
+{
+"a": 40,
+"b": 100
+},
+{
+"y": 1024,
+"a": 40,
+"b": 100
+},
+{
+"a": 40,
+"b": 100
+},
+{
+"y": 1024,
+"a": 40,
+"b": 100
+}
+],
+"uid": "O_GUARD",
+"id": 7,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 581,
+"y": 530,
+"parallax": 100,
+"title": {
+"en": "Garde"
+},
+"placement": "BACK",
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+],
+"labels": [
+{
+"name": "CUISINE",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 952,
+"y": 410,
+"width": 114,
+"height": 200,
+"title": {
+"en": "Cuisine"
+}
+},
+{
+"name": "MARMITE",
+"id": 4,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 850,
+"y": 527,
+"width": 88,
+"height": 95,
+"title": {
+"en": "Marmite"
+}
+},
+{
+"name": "GARDE",
+"id": 8,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 517,
+"y": 437,
+"width": 114,
+"height": 222,
+"title": {
+"en": "Garde"
+}
+}
+]
+},
+{
+"sid": 37,
+"uid": "S_CUISINE",
+"content": {
+"light_ambient": -1,
+"light_blur": -1,
+"zoom": 85,
+"nextID": 4
+},
+"layers": {
+"BACK": {
+"opacity_min": 100,
+"opacity_max": 100,
+"opacity_speed": 100,
+"image": {
+"aid": "3b96afb4ab156669"
+},
+"texture": {
+"width": 1536,
+"height": 1024,
+"rects": [
+{
+"w": 1536,
+"h": 1024
+}
+],
+"textures": [
+{
+"aid": "193b3ddaadff2909"
 }
 ]
 }
@@ -11593,107 +13443,97 @@
 {},
 {}
 ]
-}
-]
 },
 {
-"sid": 37,
-"uid": "S_CUISINE",
-"content": {
-"light_ambient": -1,
-"light_blur": -1,
-"zoom": 50,
-"nextID": 1
-},
-"layers": {
-"BACK": {
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100,
-"image": {
-"aid": "3b96afb4ab156669"
-},
-"texture": {
-"width": 1536,
-"height": 1024,
-"rects": [
+"name": "FOOD",
+"depths": [
 {
-"w": 1536,
-"h": 1024
+"a": 20,
+"b": 100
+},
+{
+"y": 1024,
+"a": 20,
+"b": 100
 }
 ],
-"textures": [
+"uid": "O_FOOD",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 617,
+"y": 632,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
 {
-"aid": "193b3ddaadff2909"
-}
+"name": "BACK",
+"uid": "O_BACK",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 78,
+"y": 953,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
 ]
 }
-},
-"MA": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"MB": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"MC": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"MD": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FA": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FB": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FC": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-},
-"FD": {
-"speed_x": 100,
-"speed_y": 100,
-"parallax": 100,
-"opacity_min": 100,
-"opacity_max": 100,
-"opacity_speed": 100
-}
-}
+]
 },
 {
 "sid": 39,
@@ -11701,10 +13541,16 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 40,
-"nextID": 2,
-"x": -374,
-"y": -111
+"zoom": 85,
+"nextID": 8,
+"x": -279,
+"y": -3,
+"tags": [
+"",
+"",
+"",
+""
+]
 },
 "layers": {
 "BACK": {
@@ -11834,6 +13680,152 @@
 {},
 {}
 ]
+},
+{
+"name": "KEY",
+"depths": [
+{
+"a": 50,
+"b": 100
+},
+{
+"y": 1024,
+"a": 50,
+"b": 100
+}
+],
+"uid": "O_KEY",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"hidden": true,
+"x": 678,
+"y": 791,
+"parallax": 100,
+"title": {
+"en": "Cle"
+},
+"opacity": 100,
+"angle": 30,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "BACK",
+"uid": "O_BACK",
+"id": 5,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 82,
+"y": 950,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+],
+"labels": [
+{
+"name": "TUYAU",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 618,
+"y": 658,
+"width": 96,
+"height": 120,
+"title": {
+"en": "Tuyau"
+}
+},
+{
+"name": "INFIRMERIE",
+"id": 6,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 372,
+"y": 302,
+"width": 191,
+"height": 628,
+"title": {
+"en": "Infirmerie"
+}
+},
+{
+"name": "LAVABO",
+"id": 7,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 611,
+"y": 561,
+"width": 115,
+"height": 95,
+"title": {
+"en": "Lavabo"
+}
 }
 ]
 },
@@ -11843,10 +13835,10 @@
 "content": {
 "light_ambient": -1,
 "light_blur": -1,
-"zoom": 50,
+"zoom": 85,
 "x": -249,
 "y": -3,
-"nextID": 1
+"nextID": 4
 },
 "layers": {
 "BACK": {
@@ -11924,7 +13916,137 @@
 "opacity_max": 100,
 "opacity_speed": 100
 }
+},
+"instances": [
+{
+"name": "PILL",
+"depths": [
+{
+"a": 2,
+"b": 100
+},
+{
+"y": 1024,
+"a": 2,
+"b": 100
 }
+],
+"uid": "O_PILL",
+"id": 1,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 768,
+"y": 512,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "NEW",
+"uid": "O_NEW",
+"id": 2,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 1608,
+"y": 854,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+},
+{
+"name": "BACK",
+"uid": "O_BACK",
+"id": 3,
+"tags": [
+"",
+"",
+"",
+""
+],
+"x": 82,
+"y": 950,
+"parallax": 100,
+"opacity": 100,
+"light_ambient": 255,
+"light_diffuse": 16777215,
+"light_angle": 30,
+"light_dist": -1,
+"grids": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+],
+"paths": [
+{},
+{},
+{},
+{},
+{},
+{},
+{},
+{}
+]
+}
+]
 }
 ],
 "objects": [
@@ -13296,6 +15418,929 @@
 "loop_count": -1
 }
 ]
+},
+{
+"sid": 44,
+"uid": "O_CUTTER",
+"content": {
+"bbox": true,
+"title": {
+"en": "Coupe Boulons"
+},
+"width": 576,
+"height": 576,
+"x": 290,
+"y": 291
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "6d76cf946d6c51f5"
+},
+"lo": {
+"aid": "81268b1e3019b2e9"
+}
+},
+"y": 224,
+"w": 576,
+"h": 127
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 576,
+"h": 127
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "bfbebc0255bfe121"
+},
+"texture": {
+"aid": "12042b5ffb90588f"
+}
+}
+]
+}
+},
+{
+"sid": 45,
+"uid": "O_BUCKET",
+"content": {
+"bbox": true,
+"title": {
+"en": "Bucket"
+},
+"width": 864,
+"height": 923,
+"x": 425,
+"y": 526
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "5a3131cbcdac539a"
+},
+"lo": {
+"aid": "56ddebfe3a23480a"
+}
+},
+"w": 864,
+"h": 923
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 864,
+"h": 923
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "e1b13b83d23bccec"
+},
+"texture": {
+"aid": "71f9ef1ac31c0c9f"
+}
+}
+]
+}
+},
+{
+"sid": 48,
+"uid": "O_GUARD",
+"content": {
+"bbox": true,
+"title": {
+"en": "Garde"
+},
+"width": 640,
+"height": 640,
+"x": 322,
+"y": 278
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "7521f3c46df9ce11"
+},
+"lo": {
+"aid": "69a53088050a7c51"
+}
+},
+"x": 157,
+"y": 37,
+"w": 287,
+"h": 560
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 287,
+"h": 560
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "046646aec1bda3e9"
+},
+"texture": {
+"aid": "422d93e7277aec98"
+}
+}
+]
+}
+},
+{
+"sid": 50,
+"uid": "O_PILL",
+"content": {
+"bbox": true,
+"title": {
+"en": "Pillule"
+},
+"width": 2947,
+"height": 2727,
+"x": 1589,
+"y": 1309
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "b450b8e2e6a606d7"
+},
+"lo": {
+"aid": "c6bd9b904aacefc5"
+}
+},
+"y": 1,
+"w": 2946,
+"h": 2726
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 2946,
+"h": 2726
+}
+],
+"packs": [
+{
+"count": 1,
+"collider": {
+"aid": "fffc0dc9500440fe"
+},
+"texture": {
+"aid": "60dc24aac1857c58"
+}
+}
+]
+}
+},
+{
+"sid": 52,
+"uid": "O_FOOD",
+"content": {
+"bbox": true,
+"title": {
+"en": "Nourriture"
+},
+"width": 626,
+"height": 626,
+"x": 280,
+"y": 313
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "523f6da471428f70"
+},
+"lo": {
+"aid": "36ead4962dc6508e"
+}
+},
+"w": 626,
+"h": 626
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 626,
+"h": 626
+}
+],
+"packs": [
+{
+"count": 1,
+"texture": {
+"aid": "41d26937d628b851"
+}
+}
+]
+}
+},
+{
+"sid": 56,
+"uid": "O_CARD",
+"content": {
+"bbox": true,
+"width": 1689,
+"height": 1061
+},
+"icons": [
+{},
+{},
+{},
+{}
+],
+"anims": [
+{
+"name": "STOP",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT",
+"frames": [
+{
+"image": {
+"hi": {
+"aid": "99bb04b6e1589e15"
+},
+"lo": {
+"aid": "142625708558eb20"
+}
+},
+"w": 1689,
+"h": 1061
+}
+]
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "WALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+},
+{
+"name": "TALK",
+"fps": 6,
+"action": -1,
+"loop_range_max": -1,
+"dirs": [
+{
+"name": "LEFT"
+},
+{
+"name": "RIGHT"
+},
+{
+"name": "FRONT"
+},
+{
+"name": "BACK"
+},
+{
+"name": "FL"
+},
+{
+"name": "FR"
+},
+{
+"name": "BL"
+},
+{
+"name": "BR"
+}
+],
+"loop_count": -1
+}
+],
+"packset": {
+"frames": [
+{
+"index2": -1,
+"w": 1689,
+"h": 1061
+}
+],
+"packs": [
+{
+"count": 1,
+"texture": {
+"aid": "4922f289798b779b"
+}
+}
+]
+}
 }
 ],
 "players": [
@@ -13914,7 +16959,7 @@
 {
 "id": 1,
 "text": {
-"en": "It's not a good idea.\r\n\r\nWhat?\r\n\r\nNope.\r\n\r\nI don't understand how I could use these both together."
+"en": "Je ne vois pas comment utiliser ces deux objets ensemble."
 },
 "speaker": "O_NEW",
 "voice": {
@@ -13926,6 +16971,36 @@
 ]
 },
 "randomly": true
+},
+{
+"id": 3,
+"text": {
+"en": "J'aurais besoin d'une clé pour l'ouvrir."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_NEW"
+},
+{
+"id": 4,
+"text": {
+"en": "Il semblerait que ce lavabo soit cassé."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_NEW"
 }
 ],
 "voice": {
@@ -13937,7 +17012,7 @@
 ]
 }
 },
-"nextID": 2
+"nextID": 5
 }
 },
 {
@@ -14033,6 +17108,106 @@
 },
 "nextID": 6
 }
+},
+{
+"sid": 49,
+"uid": "D_GUARD",
+"content": {
+"sentence": {
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"sentences": [
+{
+"id": 13,
+"sentences": [
+{
+"id": 17,
+"text": {
+"en": "Aujourd'hui, tu es chargé de préparer les repas, au boulot."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_GUARD"
+}
+],
+"text": {
+"en": "Boujour."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_NEW"
+},
+{
+"id": 15,
+"sentences": [
+{
+"id": 18,
+"sentences": [
+{
+"id": 19,
+"text": {
+"en": "Pousse-toi, je dois passer."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_GUARD"
+}
+],
+"text": {
+"en": "Merci, je me sens bizarre..."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_GUARD"
+}
+],
+"text": {
+"en": "Tenez votre taco."
+},
+"voice": {
+"en": [
+{},
+{},
+{},
+{}
+]
+},
+"speaker": "O_NEW"
+}
+]
+},
+"nextID": 20
+}
 }
 ],
 "items": [
@@ -14041,7 +17216,7 @@
 "uid": "I_KEY",
 "content": {
 "title": {
-"en": "Key"
+"en": "Clé"
 }
 },
 "icons": [
@@ -14095,6 +17270,160 @@
 },
 "texture": {
 "aid": "ec503a94564c5aaf"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 43,
+"uid": "I_CUTTER",
+"content": {
+"title": {
+"en": "Coupe Boulons"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "2a023aa064b89fd2"
+},
+"texture": {
+"aid": "a226ef83f08f03da"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 46,
+"uid": "I_BUCKET",
+"content": {
+"title": {
+"en": "Seau"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "dae84cadf94059c8"
+},
+"texture": {
+"aid": "67af82bd7e82bbf2"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 47,
+"uid": "I_WATER_BUCKET",
+"content": {
+"title": {
+"en": "Seau d'eau"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "9360e47f4b5fdc8e"
+},
+"texture": {
+"aid": "d9a455387121d5d7"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 51,
+"uid": "I_PILL",
+"content": {
+"title": {
+"en": "Pillule"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "7f79c3b6c544158b"
+},
+"texture": {
+"aid": "4a4c6c3f1e1dd62d"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 53,
+"uid": "I_FOOD",
+"content": {
+"title": {
+"en": "Nourriture"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "164595a499058532"
+},
+"texture": {
+"aid": "7ea0d6ee60e5c42d"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 54,
+"uid": "I_LAX_TACO",
+"content": {
+"title": {
+"en": "Nourriture Empoisonne"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "20634f6f234925ec"
+},
+"texture": {
+"aid": "40fe5682a2d5d13b"
+}
+},
+{},
+{},
+{}
+]
+},
+{
+"sid": 55,
+"uid": "I_CARD",
+"content": {
+"title": {
+"en": "Carte"
+}
+},
+"icons": [
+{
+"image": {
+"aid": "842c472a1978e54d"
+},
+"texture": {
+"aid": "c3eed6945ebcfe05"
 }
 },
 {},
